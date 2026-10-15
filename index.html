@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Favoritku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- A. NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-isi">
+      <a href="#beranda" class="logo">Game Favoritku</a>
+      <nav aria-label="Navigasi Utama">
+        <ul class="menu">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#daftar-game">Daftar Game</a></li>
+          <li><a href="#rekomendasi">Rekomendasi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- B. HERO SECTION -->
+    <section id="beranda" class="hero">
+      <div class="container">
+        <!--<span class="badge-hero">Hobi Gaming</span> -->
+        <h1>Game Favoritku</h1>
+        <p class="teks-hero">
+          Setiap orang punya game favorit. Yuk, temukan game yang cocok
+          dengan gaya bermainmu!
+        </p>
+        <button type="button" id="tombol-lihat" class="tombol tombol-utama">
+          Lihat Daftar Game
+        </button>
+      </div>
+    </section>
+
+    <!-- C. DAFTAR GAME -->
+    <section id="daftar-game" class="bagian">
+      <div class="container">
+        <div class="kepala-bagian">
+         <h2>Daftar Game</h2>
+         <p>Tiga game populer dengan keseruan yang berbeda.</p>
+        </div>
+
+
+        <div class="daftar-card">
+          <!-- Card 1: Minecraft -->
+          <article class="card">
+            <img src="assets/minecraft.jpg" alt="Gambar game Minecraft" class="gambar-game">
+            <div class="isi-card">
+              <span class="kategori">Sandbox</span>
+              <h3>Minecraft</h3>
+              <p>Bangun dunia dan berkreasi sesuai imajinasimu.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Roblox -->
+          <article class="card">
+            <img src="assets/roblox.jpg" alt="Gambar game Roblox" class="gambar-game">
+            <div class="isi-card">
+              <span class="kategori">Adventure &amp; Creation</span>
+              <h3>Roblox</h3>
+              <p>Jelajahi berbagai pengalaman dan dunia buatan komunitas.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: eFootball -->
+          <article class="card">
+            <img src="assets/efootball.jpg" alt="Gambar game eFootball" class="gambar-game">
+            <div class="isi-card">
+              <span class="kategori">Sports</span>
+              <h3>eFootball</h3>
+              <p>Nikmati permainan sepak bola dan susun tim favoritmu.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. BAGIAN REKOMENDASI -->
+    <section id="rekomendasi" class="bagian">
+      <div class="container">
+        <div class="panel-rekomendasi">
+          <h2>Masih Bingung Pilih Game?</h2>
+          <p>Klik tombol di bawah untuk menemukan rekomendasi game!</p>
+
+          <button type="button" id="tombol-pilih" class="tombol tombol-oranye">
+            Pilih Game untukku
+          </button>
+
+          <div id="kotak-hasil" class="kotak-hasil" aria-live="polite">
+            <p id="pesan-awal" class="pesan-awal">
+              Belum ada game yang dipilih. Klik tombol di atas!
+            </p>
+
+            <div id="detail-hasil" class="tersembunyi">
+              <span id="hasil-kategori" class="kategori"></span>
+              <h3 id="hasil-nama"></h3>
+              <p id="hasil-deskripsi"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Project Web Development SMP - Game Favoritku</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
